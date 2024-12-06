@@ -6,6 +6,7 @@ export const initSIP = ({ uri, password, wsUri }) => {
     sockets: [socket],
     uri,
     password,
+    register: true, 
   };
 
   const ua = new JsSIP.UA(configuration);
